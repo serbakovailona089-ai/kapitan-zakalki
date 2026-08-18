@@ -157,7 +157,7 @@ function renderOnboarding() {
 function renderOnbIntro() {
   root.innerHTML = `
     <div class="screen onb-screen">
-      <div class="onb-hero" style="background-image:url('assets/mascot-hero.jpg')">
+      <div class="onb-hero" style="background-image:url('mascot-hero.jpg')">
         <div class="onb-hero-overlay"></div>
       </div>
       <div class="onb-pad">
@@ -191,7 +191,7 @@ function renderOnbProgram() {
   root.innerHTML = `
     <div class="screen onb-screen">
       <div class="onb-pad">
-        <div class="mascot-hole" style="background-image:url('assets/mascot-coach.jpg')"></div>
+        <div class="mascot-hole" style="background-image:url('mascot-coach.jpg')"></div>
         <h1 class="onb-title small">Выбери путь</h1>
         <p class="onb-lead">Каждая программа рассчитана на результат — если пройдёшь её честно.</p>
         <div id="prog-list">${cards}</div>
@@ -380,7 +380,7 @@ function renderToday() {
       <div class="home-pad">
         <div class="streak-row">
           <div class="streak-badge"><span class="flame">🔥</span><b>${streaks.current}</b></div>
-          <div class="avatar-dot" style="background-image:url('assets/mascot-hero.jpg')"></div>
+          <div class="avatar-dot" style="background-image:url('mascot-hero.jpg')"></div>
         </div>
         <div class="quote-card">
           <div class="quote-label">Мысль дня</div>
@@ -506,7 +506,7 @@ function renderProfile() {
   root.innerHTML = `
     <div class="screen">
       <div class="profile-head">
-        <div class="profile-avatar" style="background-image:url('assets/mascot-hero.jpg')"></div>
+        <div class="profile-avatar" style="background-image:url('mascot-hero.jpg')"></div>
         <h3>${state.name}</h3>
         <div class="sub">${program.title}${state.branch ? " · " + (state.branch === "cardio" ? "упор в кардио" : "упор в силовые") : ""} · неделя ${week}</div>
       </div>
